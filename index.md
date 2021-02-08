@@ -1,7 +1,5 @@
 All documentation for the workshop is best viewed from the github.io pages
 
-[Documentation](https://ucdavis-bioinformatics-training.github.io/2021-March-Introduction-to-R-for-Bioinformatics/)
-
 Introduction to R for Bioinformatics  
 March 12, 16, and 19 from 2:00 pm to 5:00 pm  
 Organizer - Bioinformatics Core  
