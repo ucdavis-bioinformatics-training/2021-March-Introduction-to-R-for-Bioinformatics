@@ -22,7 +22,7 @@ navigation:
 
   - heading: Introduction to R
   - title: Introduction to R
-    url: prereqs/Intro2R/Intro2R_main
+    url: R/Intro2R_main
 
   - heading: ETC
   - title: Closing thoughts
