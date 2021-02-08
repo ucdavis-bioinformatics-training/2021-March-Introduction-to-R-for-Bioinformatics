@@ -1,9 +1,5 @@
 ## Reference Cheat Sheets
 
-### Unix
-
-* [fwunixref.pdf](https://files.fosswire.com/2007/08/fwunixref.pdf)
-
 ### Introduction to RStudio
 
 * [rstudio-ide.pdf](https://github.com/rstudio/cheatsheets/raw/master/rstudio-ide.pdf)

@@ -53,20 +53,13 @@ We ask for a little more patience as this process is also new to us, but we are 
 
 ### Workshop Goals
 
-This workshop is an end-to-end exploration of three popular types of epigenetic experiments: ChIP-Seq, ATAC-Seq, and whole genome bisulfite sequencing (WGBS).
+This workshop is an in-depth introduction to the basics of the R programming language as it is used for bioinformatics. By the end of the third session, participants should be able to:
 
-* End to End understanding of the basics
-  * Lectures/Discussions
-  * Technologies use
-  * Experimental design
-  * Cost estimation
-  * Workflow
-  * Data reduction
-  * Data analysis
-
-* To work through complete experiments, starting from raw data to completion, including making a few figures.
-
-* Goal is 30-40% lecture/discussion 60-70% hands-on
+* Import and export data from R
+* Understand R data types and investigate R data structures
+* Create simple visualizations
+* Generate a markdown report containing code, output, and plain text
+* Write custom functions
 
 ### Workshop Materials
 
@@ -83,9 +76,9 @@ Workshop materials are all posted on github, and publicly available
    [https://ucdavis-bioinformatics-training.github.io/](https://ucdavis-bioinformatics-training.github.io/)
 
 
-* This Introduction to Analysis of Epigenetic Data Workshop
+* This Introduction to R for Bioinformatics workshop
 
-   [https://ucdavis-bioinformatics-training.github.io/2020-Epigenetics_Workshop/](https://ucdavis-bioinformatics-training.github.io/2020-Epigenetics_Workshop/)
+   [https://ucdavis-bioinformatics-training.github.io/2021-March-Introduction-to-R-for-Bioinformatics/](https://ucdavis-bioinformatics-training.github.io/2021-March-Introduction-to-R-for-Bioinformatics/)
 
 ### Computing Cluster
 

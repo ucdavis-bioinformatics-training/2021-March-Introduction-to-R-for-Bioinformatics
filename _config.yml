@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
-title: 'Introduction to Analysis of Epigenetic Data 2020'
+title: 'Introduction to R for Bioinformatics'
 show_downloads: True
 google_analytics: True
 navigation:
@@ -11,10 +11,6 @@ navigation:
     url: base/welcome
   - title: Schedule
     url: base/schedule
-  - title: What is Bioinformatics/Genomics?
-    url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/genomics/Genomics_a_perspective_May_2020.pdf
-  - title: Some Experimental Design?
-    url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/epigenetics/Epigenetics-expDesign_Dec_2020.pdf
 
   - heading: Support
   - title: Slack
@@ -23,46 +19,10 @@ navigation:
     url: base/zoom
   - title: Cheat Sheets
     url: base/cheatSheetIndex
-  - title: Software and Links
-    url: software_scripts/software
-  - title: Scripts
-    url: software_scripts/scripts_links
 
-  - heading: Prerequisites
-  - title: Introduction to the Command Line
-    url: prereqs/CLI_Intro/command-line-intro
+  - heading: Introduction to R
   - title: Introduction to R
     url: prereqs/Intro2R/Intro2R_main
-  - title: High Performance Computing
-    url: prereqs/CLI_Intro/cluster
-
-  - heading: Data Reduction ChIPseq/ATACseq
-  - title: Filetype Description
-    url: data_reduction/filetypes
-  - title: ChIP and ATAC project setup
-    url: data_reduction/chip_atac/00-project_setup
-  - title: Preprocessing Reads
-    url: data_reduction/chip_atac/01-preproc_htstream
-  - title: Mapping Reads
-    url: data_reduction/chip_atac/02-alignment
-  - title: Filtering Reads
-    url: data_reduction/chip_atac/03-filter
-  - title: Peak Call with MACS2
-    url: data_reduction/chip_atac/04-peaks
-
-  - heading: Data Analysis ChIPseq/ATACseq
-  - title: Differential ChIPseq
-    url: data_analysis/chip_atac/chip_R
-  - title: Differential ATACseq
-    url: data_analysis/chip_atac/atac_R
-  - title: R Package Installation
-    url: data_analysis/chip_atac/install_packages
-
-  - heading: Methylation
-  - title: Introduction to WGBS
-    url: https://raw.githubusercontent.com/ucdavis-bioinformatics-training/ucdavis-bioinformatics-training.presentations/master/epigenetics/WGBS.pdf
-  - title: WGBS hands-on
-    url: WGBS/WGBS
 
   - heading: ETC
   - title: Closing thoughts
@@ -70,6 +30,6 @@ navigation:
   - title: Workshop Photos
     url: photos/photos
   - title: Github page
-    url: https://github.com/ucdavis-bioinformatics-training/2020-Epigenetics_Workshop
+    url: https://github.com/ucdavis-bioinformatics-training/2021-March-Introduction-to-R-for-Bioinformatics
   - title: Biocore website
     url: http://bioinformatics.ucdavis.edu
