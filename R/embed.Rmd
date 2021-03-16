@@ -383,11 +383,11 @@ myQuestions2 = [
     question: "Try to add a new 7th element to the disease_stage factor. When the new element does not match any of the levels of the factor, what will happen?",
     answers: {
       a: "A new level will be added to the factor",
-      b: "A new element will be added to the factor",
+      b: "A new element will be added to the factor that is an NA",
       c: "Nothing happens",
       d: "Gives a warning"
     },
-    correctAnswer: "d"
+    correctAnswer: "b"
   },
   {
     question: "You can type a '?' and then a function name to get help for that function. What does the 'relevel' function do?",
@@ -894,7 +894,28 @@ submitButton4.addEventListener('click', function() {showResults(myQuestions4, qu
 
 ---
 
-Topic 4. Functions in R
+Topic 4. R markdown and R notebooks
+====================================================
+
+Markdown is a system that allow easy incorporation of annotations/comments together with computing code. Both the raw source of markdown file and the rendered output are easy to read. R markdown allows both interactive mode with R and producing a reproducible document. An R notebook is an R markdown document with code chunks that can be executed independently and interactively, with output visible immediately beneath the input. In RStudio, by default, all R markdown documents are run in R notebook mode. Under the R notebook mode, when executing a chunk, the code is sent to the console to be run one line at a time. This allows execution to stop if a line raises an error.
+
+<br>
+
+In RStudio, creating an R notebook can be done by going to the menu command ** File -> New File -> R Notebook **.
+
+An example of an R notebook looks like:
+
+
+![](./notebook.png)
+
+
+The way to run the R code inside the code chunk is to use the green arrow located at the top right corner of each of the code chunk, or use ** Ctrl + Shift + Enter ** on Windows, or ** Cmd + Shift + Enter ** on Mac to run the current code chunk. To run each individual code line, one uses ** Ctrl + Enter ** on Windows, or ** Cmd + Enter ** on Mac.
+
+To render R notebook to html/pdf/word documents can be done using the **Preview** menu.
+
+---
+
+Topic 5. Functions in R
 ====================================================
 #### Invoking a function by its name, followed by the parenthesis and zero or more arguments.
 
@@ -1003,11 +1024,7 @@ There is a **while** loop in R similarly as in command line or any other program
 **}**
 
 
-##### `r colFmt("Challenge:", 'blue')`
-
-Please rewrite the calculation of the column sum using *while* loop.
-
-#### `r colFmt("Solution:", 'skyblue')`
+Here is the same row sum calculation using a while loop:
 
 ```{r}
 while (i <= dim(my_matrix)[1]){
@@ -1024,7 +1041,7 @@ while (i <= dim(my_matrix)[1]){
 
 #### A few useful functions: apply(), lapply(), sapply(), and tapply() to replace for loop
 
-##### apply() takes array or matrix as input and output in vector, array or list.
+##### apply() takes an array or matrix as input and outputs a vector, array or list.
 
 ```{r}
 # recall my_matrix
@@ -1036,7 +1053,7 @@ apply(my_matrix, MARGIN=1, sum)
 ```
 
 
-##### lapply() takes a list, vector or data frame as input and outputs in list.
+##### lapply() takes a list, vector or data frame as input and outputs a list.
 
 
 ```{r}
@@ -1056,7 +1073,7 @@ apply(data3, MARGIN=1, sum)
 lapply(1:dim(data3)[1], function(x){log10(sum(data3[x,]))})
 ```
 
-##### The function sapply() works like function lapply(), but tries to simplify the output to the most elementary data structure that is possible. As a matter of fact, sapply() is a "wrapper" function for lapply(). By default, it returns a vector.
+##### The function sapply() works like function lapply(), but tries to simplify the output to the simplest data structure possible. As a matter of fact, sapply() is a "wrapper" function for lapply(). By default, it returns a vector.
 
 ```{r}
 # To check the syntax of using sapply():
@@ -1161,7 +1178,21 @@ submitButton5.addEventListener('click', function() {showResults(myQuestions5, qu
 
 ---
 
-Topic 5. Basic statistics in R
+
+## CHALLENGE
+
+Write a function to calculate min-max normalization for a single row. Here is the formula:
+
+<img src="min_max.png" width="200"/>
+
+Then use apply to normalize every row of data2. You might want to take a small piece of data2 to test it with, e.g. the first 3 rows and first 3 columns.
+
+## HARD CHALLENGE
+
+Now take your normalized data and write a function to find the log2-fold change (i.e. the log of the ratio of normalized counts) between any two samples across all genes. Then use one of the apply functions to calculate log2-fold change across ALL samples, given one sample. Finally, use another one of the apply functions to find the pair-wise log2-fold changes for every pair of samples.
+
+
+Topic 6. Basic statistics in R
 ====================================================
 
 ```{r echo=FALSE, results= 'asis'}
@@ -1190,7 +1221,7 @@ apply(data3, 2, quantile)
 
 ---
 
-Topic 6. Simple data visulization in R
+Topic 7. Simple data visulization in R
 ====================================================
 
 Scatter plot and line plot can be produced using the function plot().
@@ -1238,7 +1269,7 @@ dev.off()
 
 ---
 
-Topic 7. Install packages in R
+Topic 8. Install packages in R
 ====================================================
 
 ##### Starting from Bioconductor version 3.8, the installation of packages is recommended to use BiocManager.
@@ -1286,7 +1317,7 @@ install_github("stephenturner/qqman")
 
 ---
 
-Topic 8. Save data in R session
+Topic 9. Save data in R session
 ====================================================
 
 #### To save history in R session
@@ -1304,29 +1335,6 @@ save(list=c("x", "data"), file="Oct08.RData")
 
 #load("Oct08.RData")
 ```
----
-
-Topic 9. R markdown and R notebooks
-====================================================
-
-Markdown is a system that allow easy incorporation of annotations/comments together with computing code. Both the raw source of markdown file and the rendered output are easy to read. R markdown allows both interactive mode with R and producing a reproducible document. An R notebook is an R markdown document with code chunks that can be executed independently and interactively, with output visible immediately beneath the input. In RStudio, by default, all R markdown documents are run in R notebook mode. Under the R notebook mode, when executing a chunk, the code is sent to the console to be run one line at a time. This allows execution to stop if a line raises an error.
-
-<br>
-
-In RStudio, creating an R notebook can be done by going to the menu command ** File -> New File -> R Notebook **.
-
-An example of an R notebook looks like:
-
-
-![](./notebook.png)
-
-
-The way to run the R code inside the code chunk is to use the green arrow located at the top right corner of each of the code chunk, or use ** Ctrl + Shift + Enter ** on Windows, or ** Cmd + Shift + Enter ** on Mac to run the current code chunk. To run each individual code line, one uses ** Ctrl + Enter ** on Windows, or ** Cmd + Enter ** on Mac.
-
-To render R notebook to html/pdf/word documents can be done using the **Preview** menu.
-
-
-<br>
 
 ---
 
