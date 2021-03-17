@@ -23,6 +23,8 @@ navigation:
   - heading: Introduction to R
   - title: Introduction to R
     url: R/Intro2R_main
+  - title: Challenge Solutions
+    url: R/challenge_solutions
 
   - heading: ETC
   - title: Closing thoughts
