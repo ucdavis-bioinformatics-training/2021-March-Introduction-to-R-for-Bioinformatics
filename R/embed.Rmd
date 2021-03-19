@@ -1189,7 +1189,7 @@ Then use apply to normalize every row of data2. You might want to take a small p
 
 ## HARD CHALLENGE
 
-Now take your normalized data and write a function to find the log2-fold change (i.e. the log of the ratio of normalized counts) between any two samples across all genes. Then use one of the apply functions to calculate log2-fold change across ALL samples, given one sample. Finally, use another one of the apply functions to find the pair-wise log2-fold changes for every pair of samples.
+Now take your normalized data and write a function to find the log2-fold change (i.e. the log of the ratio of normalized counts) between any two samples across all genes. Then use one of the apply functions to calculate log2-fold change across ALL samples, given one sample. Finally, use a for loop to find the pair-wise log2-fold changes for every pair of samples.
 
 
 Topic 6. Basic statistics in R
