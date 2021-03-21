@@ -8,7 +8,7 @@
 
 * [Short-refcard.pdf](https://cran.r-project.org/doc/contrib/Short-refcard.pdf)
 
-* [base-r.pdf](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
+* [base-r.pdf](https://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
 
 * [advancedR.pdf](https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf)
 
