@@ -39,10 +39,7 @@ data.frame(Species = iris$Species,
            Length.Sum = iris$Sepal.Length + iris$Petal.Length)
 ```
 
-### normalization
-
-
-
+### min max normalization
 
 ```r
 # make small version of data2 to test formula
@@ -154,6 +151,3 @@ legend("topright", fill=cols, legend=levels(dd$Species))
 ```
 
 ![](challenge_solutions_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
-
-
-
