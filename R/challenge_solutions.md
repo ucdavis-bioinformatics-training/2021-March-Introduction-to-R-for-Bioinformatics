@@ -37,3 +37,24 @@ data.frame(Species = iris$Species,
            Length.Sum = iris$Sepal.Length + iris$Petal.Length)
 ```
 
+### apply
+
+```r
+min_max_norm <- function(x) {
+    (x-min(x))/(max(x)-min(x))
+}
+
+dnorm = t(apply(data2,MARGIN=1,min_max_norm))
+
+l2fc <- function(x,y) {
+    log2(x/y)
+}
+
+l2fc_all <- function(y) {
+    apply(dnorm,MARGIN=2,function(x) l2fc(x,y))
+}
+
+for (samp in colnames(dnorm)) {
+    print(l2fc_all(dnorm[,samp]))
+}
+```
